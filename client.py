@@ -49,11 +49,11 @@ print
 ######################################################
 #Update this section to match your environment setting
 ######################################################
-organization = "1eaiiu"
-deviceType = "RaspberryPi"
-deviceId = "RaspberryPi-Lightup"
-authMethod = "token"
-authToken = "y+q@!u9h@YesuGV1iJ"
+organization = ""
+deviceType = ""
+deviceId = ""
+authMethod = ""
+authToken = ""
 
 # Initialize the device client.
 try:
@@ -77,9 +77,11 @@ try:
                 data = { 'LightStatus': ls, 'Intruder': intruder}
                 deviceCli.publishEvent("status","json", data)
 
-                time.sleep(1)
+                time.sleep(2)
 except KeyboardInterrupt:
-        print "Cleaning up ..."
-        GPIO.cleanup()
+        print "Cleaning up..."
+		GPIO.output(3.0)
+        #GPIO.cleanup()
+		print "Disconneting from IBM IoT plarform..."
 # Disconnect the device and application from the cloud
 deviceCli.disconnect()
