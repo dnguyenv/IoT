@@ -1,4 +1,4 @@
-# IBM FAU Hackathon
+# IBM Bluemix IoT Hackathon
 
 This is an IoT project named LightUp aiming to introduce to FAU Hackathon event an example as for how to build an IoT application using.
 The resulting application is a small mobile web page that allows the user to turn-on and turn-off an electronic device from anywhere using his smartphone.
