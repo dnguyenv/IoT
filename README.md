@@ -9,8 +9,8 @@ Here is the architecture overview of the application:
 # Stuffs needed for building project
 ## Hardware:
 
-1. Raspberry Pi (I'm using 2B and Zero)
-2. USB wifi dongle, USB keyboard and mouse, HDMI monitor and cable (these are only needed for initial setup of your Pi)
+1. Raspberry Pi
+2. USB wifi dongle (if you have Pi 3, then don't need this), keyboard and mouse, HDMI monitor and cable (these are only needed for initial setup of your Pi)
 3. Micro USB power adapter (smartphone charger).
 4. PIR motion sensor.
 5. Male-female and male-male jumpers.
@@ -22,7 +22,7 @@ Here is the architecture overview of the application:
 ## Software:
 1. Raspbian OS
 2. Python
-3. CloudFoundry cli, Bluemix account (It's free, go to http://bluemix.net/ to register)
+3. [CloudFoundry cli](https://github.com/cloudfoundry/cli/releases), Bluemix account (It's free, go to http://bluemix.net/ to register)
 
 ## Circuit wiring up:
 
