@@ -10,16 +10,14 @@ Here is the architecture overview of the application:
 ## Hardware:
 
 1. Raspberry Pi (I'm using 2B and Zero)
-2. USB wifi dongle
-3. USB keyboard and mouse.
-4. HDMI monitor and cable.
-5. Micro USB power adapter (smartphone charger).
-6. PIR motion sensor.
-7. Male-female and male-male jumpers.
-8. Breadboard.
-9. BC547 transistor.
-10. Songle SRD-05VDC-SL-C relay and 1n4001 diode.
-11. LED and 220Ohm resistor.
+2. USB wifi dongle, USB keyboard and mouse, HDMI monitor and cable (these are only needed for initial setup of your Pi)
+3. Micro USB power adapter (smartphone charger).
+4. PIR motion sensor.
+5. Male-female and male-male jumpers.
+6. Breadboard.
+7. BC547 transistor.
+8. Songle SRD-05VDC-SL-C relay and 1n4001 diode.
+9. LED and 220Ohm resistor.
 
 ## Software:
 1. Raspbian OS
@@ -46,10 +44,6 @@ Close look at relay part (I'm using 8 channels relay module and channel 8 is for
 
 ![alt text](./images/wired-relay.jpg "Circuit wire up")
 
-If you want to see detail circuit diagram, please refer to this post where I inherited from for hardware part. 
-
-http://diyhacking.com/raspberry-pi-home-automation-ibm-bluemix/
-
 ## Basic steps to setup the environment:
 
 ###Setup your Rapberry pi
@@ -72,15 +66,15 @@ Follow these steps to register your Raspberry Pi to Bluemix:
 
 Again, make sure you have a Bluemix account (http://bluemix.net/)
 Login to Bluemix using your account credentials
-Go to Catalog, type "Internet of things" in the Search bar to search for the IBM Internet of Things Foundation service
+Go to Catalog, type "Internet of things" in the Search bar to search for the IBM Internet of Things Platform service
 
 ![alt text](./images/iotservice-create.png "Create iotf service")
 
-And create one. Make sure you name it correctly so that the example code can work.
+Select a Pricing plan (there is a free one) And select Create to create the service
 
 ![alt text](./images/iotservice-create1.png "Create iotf service")
 
-After creating the service, click on Launch dashboard button
+After creating the service, select Launch button
 
 ![alt text](./images/iotservice-create2.png "Create iotf service")
 
@@ -88,7 +82,7 @@ to launch the Dashboard screen.
 
 ![alt text](./images/iotservice-dashboard.png "Create iotf service")
 
-From the dashboard, click on Add a device to add your Raspberry Pi as a new device to the iotf. You need to specify a device type for your device. If you does not have one, create new type, lets name it "RaspberryPi".
+From the dashboard, navigate to the Devices screen, select Add device button to add your Raspberry Pi as a new device to the service. You need to specify a device type for your device. If you does not have one, create new type, lets name it "RaspberryPi".
 
 ![alt text](./images/iotservice-createdevicetype.png "Create iotf service")
 
@@ -104,7 +98,7 @@ Close the screen, and now your device is added to the list
 
 ![alt text](./images/iotservice-adddevice3.png "Create iotf service")
 
-Next step is to generate an access token for accessing the service, to send and receive information to/from the device. Click on the Access link, then API Keys link and Generate API Key button
+Next step is to generate an access token for accessing the service, to send and receive information to/from the device. Navigate to Applications screen (by using the left-pane navigator), then select Generate API Key button
 
 ![alt text](./images/generate-apikey1.png "Create iotf service")
 
